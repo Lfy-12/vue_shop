@@ -32,6 +32,7 @@ Vue.component('tree-table',TreeTable)
 // 将富文本编辑器 注册为全局可用的组件
 Vue.use(VueQuillEditor)
 
+// 过滤器：渲染时间
 Vue.filter('dataFormat',function(originVal){
   const dt = new Date(originVal)
 
